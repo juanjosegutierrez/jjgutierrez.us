@@ -1,0 +1,21 @@
+<div id="forgot-container">
+  <div class="top-bar">
+  	<navbar></navbar>
+  </div>
+  <div class="forgot-banner">
+  	<h2 class="forgot-banner-text">Verify Your Email</h2>
+  </div>
+  <div class="forgot-form-container">
+    <div class="forgot-form">
+      <p class="error" ng-if="blankError">Please enter email.</p>
+      <p class="error" ng-if="emailError">Incorrect email. This email was not used to sign up.</p>
+      <p class="email-message">
+      Enter the email associated with your account. We will send you a security code that you will need to reset your password.
+      </p>
+      <label>Email</label>
+      <input type="text" class="email-input" ng-model="email" ng-keyup="$event.keyCode === 13 && clickSend()">
+	  	<button class="forgot-button" ng-click="clickSend()">Send</button>
+	  </div>
+  </div>
+  <bottom></bottom>
+</div>

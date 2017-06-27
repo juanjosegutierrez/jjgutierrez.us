@@ -1,0 +1,22 @@
+<div id="fibonacci-container">
+  <div class="top-bar">
+  	<navbar></navbar>
+  </div>
+  <div class="fibonacci-banner">
+    <h2 class="fibonacci-banner-text">Get nth Fibonacci Number</h2>
+  </div>
+  <div class="number-box-container">
+    <div class="number-box">
+      <a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">Fibonacci Number Definition</a>
+      <p class="number-error" ng-if="showError">Number must be an integer between 0 and 100</p>
+    	<label>Enter Number From 0-100</label>
+    	<input type="text" class="number-input" ng-model="inputNumber" ng-keyup="$event.keyCode === 13 && clickCalc()">
+    	<button class="number-button" ng-click="clickCalc()">Calculate</button>
+    	<p class="number-result">Your Fibonacci Number: {{ result }}</p>
+    	<p class="number-explanation">
+    	I created this algorithm using memoization and dynamic programming to calculate the number extremely fast. I also optimized the algorithm to run in linear time and constant space complexity. The algorithm is written in python.
+    	</p>
+    </div>
+  </div>
+  <bottom></bottom>
+</div>

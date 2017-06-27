@@ -1,0 +1,27 @@
+<div id="signup-container">
+  <div class="top-bar">
+  	<navbar></navbar>
+  </div>
+  <div class="signup-banner">
+  	<h2 class="signup-banner-text">Create Your Own Account</h2>
+  </div>
+  <div class="signup-form-container">
+    <div class="signup-form">
+      <p class="enter-error" ng-if="emptyError">Please enter all information.</p>
+      <p class="auth-error" ng-if="usernameError">Username is taken. Please choose another one.</p>
+      <p class="auth-error" ng-if="emailError">An account with that email already exists. Please log in.</p>
+      <p class="auth-error" ng-if="validError">This email address is invalid.</p>
+	    <label>Name</label>
+      <input type="text" class="name-input" ng-model="name" ng-keyup="$event.keyCode === 13 && clickSignup()">
+      <label>Email</label>
+      <input type="text" class="email-input" ng-model="email" ng-keyup="$event.keyCode === 13 && clickSignup()">
+      <label>Username</label>
+	  	<input type="text" class="username-input" ng-model="username" ng-keyup="$event.keyCode === 13 && clickSignup()">
+	  	<label>Password</label>
+	  	<input type="password" class="password-input" ng-model="password" ng-keyup="$event.keyCode === 13 && clickSignup()">
+	  	<button class="signup-button" ng-click="clickSignup()">Sign Up</button>
+	  	<a href="#!/login" class="login-link">Already Have an Account?</a>
+	  </div>
+  </div>
+  <bottom></bottom>
+</div>

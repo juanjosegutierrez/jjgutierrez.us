@@ -1,0 +1,25 @@
+<html>
+  <head>
+    {% load static %}
+    {% csrf_token %}
+    <title>JJ Gutierrez</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="{% static 'js/angular-route.min.js' %}"></script>
+    <script src="{% static 'js/angular-cookies.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body ng-app="home">
+    <div ng-view></div>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/factory.js' %}"></script>
+    <script src="{% static 'js/components/navbar.js' %}"></script>
+    <script src="{% static 'js/components/bottom.js' %}"></script>
+    <script src="{% static 'js/components/main.js' %}"></script>
+    <script src="{% static 'js/components/fibonacci.js' %}"></script>
+    <script src="{% static 'js/components/login.js' %}"></script>
+    <script src="{% static 'js/components/signup.js' %}"></script>
+    <script src="{% static 'js/components/forgot.js' %}"></script>
+    <script src="{% static 'js/components/recover.js' %}"></script>
+    <script src="{% static 'js/components/member.js' %}"></script>
+  </body>
+</html>

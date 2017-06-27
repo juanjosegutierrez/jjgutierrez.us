@@ -1,0 +1,6 @@
+# Settings
+src/mysite/settings.py
+
+# Other
+*.pyc
+src/stat/static/admin/

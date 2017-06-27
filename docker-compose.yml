@@ -1,0 +1,30 @@
+version: '2'
+services:
+  db:
+    image: mysql:5.7.17
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 
+      MYSQL_USER: 
+      MYSQL_DATABASE: 
+    volumes:
+      - ./src:/src
+  web:
+    build: .
+    command: bash -c "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn mysite.wsgi --bind=unix:/src/webapp/gunicorn.sock -w 2"
+    volumes:
+      - ./src:/src
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/src
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - web

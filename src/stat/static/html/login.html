@@ -1,0 +1,22 @@
+<div id="login-container">
+  <div class="top-bar">
+  	<navbar></navbar>
+  </div>
+  <div class="login-banner">
+  	<h2 class="login-banner-text">Log In To See Member Information</h2>
+  </div>
+  <div class="login-form-container">
+    <div class="login-form">
+      <p class="enter-error" ng-if="enterError">Please enter username and password.</p>
+      <p class="auth-error" ng-if="authError">Incorrect username or password.</p>
+	    <label>Username</label>
+	  	<input type="text" class="username-input" ng-model="username" ng-keyup="$event.keyCode === 13 && clickLogin()">
+	  	<label>Password</label>
+	  	<input type="password" class="password-input" ng-model="password" ng-keyup="$event.keyCode === 13 && clickLogin()">
+	  	<button class="login-button" ng-click="clickLogin()">Log In</button>
+	  	<a href="#!/signup" class="signup-link">Create an Account</a>
+      <a href="#!/forgot" class="forgot-link">Forgot Password</a>
+	  </div>
+  </div>
+  <bottom></bottom>
+</div>

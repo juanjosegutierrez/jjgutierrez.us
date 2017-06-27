@@ -1,0 +1,21 @@
+<div id="recover-container">
+  <div class="top-bar">
+  	<navbar></navbar>
+  </div>
+  <div class="recover-banner">
+  	<h2 class="recover-banner-text">Recover Your Password</h2>
+  </div>
+  <div class="recover-form-container">
+    <div class="recover-form">
+      <p class="error" ng-if="entryError">Please enter all information.</p>
+      <p class="error" ng-if="codeError">Incorrect Security Code</p>
+      <p class="check-message">Enter the security code sent to your email. Check your spam as well.</p>
+	    <label>Security Code</label>
+	  	<input type="text" class="code-input" ng-model="security" ng-keyup="$event.keyCode === 13 && clickSet()">
+      <label>New Password</label>
+      <input type="password" class="password-input" ng-model="password" ng-keyup="$event.keyCode === 13 && clickSet()">
+	  	<button class="recover-button" ng-click="clickSet()">Set</button>
+	  </div>
+  </div>
+  <bottom></bottom>
+</div>

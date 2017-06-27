@@ -1,0 +1,610 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: helvetica, sans-serif;
+}
+
+label {
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+input {
+	width: 499px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 1px solid #808080;
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid #1dce5e;
+}
+
+button {
+	width: 499px;
+	height: 40px;
+	color: #ffffff;
+	font-size: 20px;
+	background-color: #1dce5e;
+	border: none;
+	border-radius: 10px;
+	margin-top: 15px;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	background-color: #19b854;
+}
+
+.top-bar {
+	width: 100%;
+	height: 10%;
+}
+
+.navbar {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+.fibonacci {
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  width: 100px;
+  height: 50px;
+}
+
+.member {
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+  display: inline-block;
+  text-align: center;
+	line-height: 70px;
+  width: 100px;
+  height: 50px;
+}
+
+.login {
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+  display: inline-block;
+  text-align: center;
+	line-height: 70px;
+  width: 100px;
+  height: 50px;
+}
+
+.logout {
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+  display: inline-block;
+  text-align: center;
+	line-height: 70px;
+  width: 100px;
+  height: 50px;
+}
+
+.img-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+}
+
+.navbar img {
+	cursor: pointer;
+	cursor: hand;
+	display: block;
+	width: 161px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.top-banner {
+	position: relative;
+	height: 570px;
+	background: linear-gradient(rgba(63, 93, 156, 0.5), rgba(63, 93, 156, 0.5)), url(../assets/blue-mountains.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.banner-text {
+	color: #ffffff;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 500px;
+	height: 300px;
+}
+
+.banner-header {
+	font-size: 50px;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+.banner-title {
+	font-size: 20px;
+}
+
+.banner-paragraph {
+	font-size: 18px;
+	margin-top: 25px;
+}
+
+.projects-header {
+	font-size: 35px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.project-one {
+	height: 500px;
+	background-color: #e7e7e7;
+	overflow: hidden;
+}
+
+.project-header {
+	font-size: 30px;
+	float: left;
+	margin-left: 400px;
+	margin-top: 50px;
+	margin-bottom: 20px
+}
+
+.project-list {
+	display: inline-block;
+	width: 400px;
+	clear: both;
+	font-size: 20px;
+	float: left;
+	margin-left: 250px;
+	margin-top: 40px;
+}
+
+.project-list li {
+  margin-bottom: 30px;
+}
+
+.project-image {
+  display: inline-block;
+	width: 350px;
+	margin-top: 160px;
+	margin-left: 100px;
+}
+
+.project-two {
+	height: 500px;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.project-three {
+	height: 500px;
+	background-color: #e7e7e7;
+	overflow: hidden;
+}
+
+.project-four {
+	height: 500px;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.project-more-list {
+	display: inline-block;
+	width: 500px;
+	font-size: 20px;
+}
+
+.project-more-list li {
+	margin-bottom: 30px;
+}
+
+.projects-title-container {
+	background-color: #e7e7e7;
+	height: 120px;
+	overflow: hidden;
+}
+
+.project-text-container {
+	font-size: 20px;
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.project-text {
+	height: 340px;
+	width: 550px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.bottom-banner {
+	height: 400px;
+	background-color: #3f5d9c;
+  position: relative;
+}
+
+.bottom-block {
+	color: #ffffff;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 180px;
+	width: 400px;
+}
+
+.bottom-block a {
+  display: inline-block;
+}
+
+.github-icon {
+	width: 36px;
+	height: 36px;
+}
+
+.linkedin-icon {
+  width: 44px;
+  height: 36px;
+  margin-left: 10px;
+}
+
+.angellist-icon {
+	height: 36px;
+	margin-left: 10px;
+}
+
+.bottom-block p {
+	margin-top: 40px;
+}
+
+.fibonacci-banner {
+	width: 100%;
+	height: 130px;
+	background-color: #3f5d9c;
+	position: relative;
+}
+
+.fibonacci-banner-text {
+  color: #ffffff;
+  font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 35px;
+	width: 400px;
+}
+
+.number-box-container {
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+.number-box {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 400px;
+	width: 500px;
+}
+
+.number-box a {
+	width: 210px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.number-error {
+	color: #ff0000;
+	margin-bottom: 5px;
+}
+
+.number-box label {
+	margin-top: 5px;
+}
+
+.number-button {
+	margin-top: 25px;
+}
+
+.number-result {
+	font-size: 18px;
+	margin-top: 40px;
+}
+
+.number-explanation {
+	font-size: 18px;
+	margin-top: 40px;
+	color: #808080;
+}
+
+.login-banner {
+	width: 100%;
+	height: 150px;
+	background-color: #3f5d9c;
+	position: relative;
+}
+
+.login-banner-text {
+  color: #ffffff;
+  font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 35px;
+	width: 400px;
+}
+
+.login-form-container {
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+
+.login-form {
+	height: 325px;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.login-form p {
+	color: #ff0000;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.signup-link {
+	width: 150px;
+	display: block;
+	margin-top: 15px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.forgot-link {
+	width: 140px;
+	display: block;
+	margin-top: 15px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.signup-banner {
+	width: 100%;
+	height: 150px;
+	background-color: #3f5d9c;
+	position: relative;
+}
+
+.signup-banner-text {
+  color: #ffffff;
+  font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 35px;
+	width: 400px;
+}
+
+.signup-form-container {
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+
+.signup-form {
+	height: 470px;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.signup-form p {
+	color: #ff0000;
+	margin-bottom: 5px;
+}
+
+.login-link {
+	width: 200px;
+	display: block;
+	margin-top: 15px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.member-banner {
+	width: 100%;
+	height: 150px;
+	background-color: #3f5d9c;
+	position: relative;
+}
+
+.member-banner-text {
+  color: #ffffff;
+  font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 35px;
+	width: 400px;
+}
+
+.member-text-container {
+	font-size: 20px;
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+
+.member-text {
+	height: 200px;
+	width: 550px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.member-bottom-line {
+	margin-top: 35px;
+}
+
+.forgot-banner {
+	width: 100%;
+	height: 150px;
+	background-color: #3f5d9c;
+	position: relative;
+}
+
+.forgot-banner-text {
+  color: #ffffff;
+  font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 35px;
+	width: 400px;
+}
+
+.forgot-form-container {
+	font-size: 20px;
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+
+.forgot-form {
+	height: 325px;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.check-message {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.error {
+	font-size: 16px !important;
+	color: #ff0000;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.recover-banner {
+	width: 100%;
+	height: 150px;
+	background-color: #3f5d9c;
+	position: relative;
+}
+
+.recover-banner-text {
+  color: #ffffff;
+  font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 35px;
+	width: 400px;
+}
+
+.recover-form-container {
+	font-size: 20px;
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.recover-form {
+	height: 350px;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
